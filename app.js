@@ -10,6 +10,7 @@ const traerCategorias = () => {
         redirect: 'follow'
     };
 
+
     fetch("https://opentdb.com/api_category.php", requestOptions)
         .then(response => response.json()) // devuelve objeto literal con info de la lista de categorias
         .then(
