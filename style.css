@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+   
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url(./bluedos.jpeg);
+    
+    background-size: cover;
+   
+}
+
+#contenido{
+    
+    width: 100%;
+    margin: 0px auto;
+    
+}
+
+
+
+header{
+    padding-top: 0px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 100px;
+    color: rgb(20, 22, 22);
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    
+
+}
+
+nav{
+    /*background-color: rgb(247, 244, 244);*/
+    font-size: large;
+    height: 80px;
+    text-align:center;
+    line-height: 100px;
+
+
+}
+
+#calificar{
+    
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color:rgb(197, 200, 201)
+
+
+
+}
+
+
+
+#trivia-contenido{
+    
+    text-align:left;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    
+
+  
+    border-radius: 10px solid black;
+    
+    width: 78%;
+    min-height: 500px;
+    
+   
+    
+
+}
+
+
+#calificador{
+    float: left;
+    align-items: center;
+    padding-top: 10px;
+    
+    width: 20%;
+    min-height: 350px;
+    background-color: rgb(160, 160, 152);
+    
+}
+
+
+.respuesta-error{
+    color: red;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.respuesta-error::before {
+   
+    content: "\2718";
+    padding: 0px;
+}
+
+.respuesta-correcta {
+    color: rgb(46, 234, 83);font-weight: bolder;
+    font-size: 25px;
+}
+
+.respuesta-correcta::before{
+    content: "\2714";
+    padding-left: 10px;
+}

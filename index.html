@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROYECTO TRIVIA</title>
+    <link rel="icon" href="/QM.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+
+    <div id="contenido" class="container">
+
+        <header>
+            <div class="top">
+                <h1>
+                    TRIVIA
+                </h1>
+
+            </div>
+        </header>
+
+        <nav>
+            <label><b>CATEGORIAS </b></label>
+            <select id="categoria">
+                <option></option>
+
+            </select>
+
+
+            <label><b>DIFICULTAD</b></label>
+            <select id="dificultad">
+                <option value="0">Cualquier opcion</option>
+                <option value="easy">Facil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Dicificl</option>
+            </select>
+
+
+            <label><b>TIPO DE PREGUNTA</b></label>
+            <select id="tipo_pregunta">
+                <option value="0">Cualquier pregunta</option>
+                <option value="multiple">Opcion multiple</option>
+                <option value="boolean">Verdadero/Falso</option>
+
+
+            </select>
+
+            <button type="button" class="btn btn-primary btn-sm" onclick="crearTrivia()">
+                CREAR TRIVIA
+            </button>
+
+
+
+        </nav>
+
+        <nav id="calificar">
+            
+            <button class="cal" onclick="puntaje()">CALIFICAR</button>
+            <br>
+            <label><b>PUNTOS OBTENIDOS</b></label>
+            <div id="score"></div>
+           
+
+        </nav>
+        
+        
+        
+
+        <section id="trivia-contenido">
+            <form id="preguntas"></form>
+           
+
+            
+
+        </section>
+
+                
+        
+        
+        
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
